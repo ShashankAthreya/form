@@ -13,12 +13,13 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 55%;
+  right: 5%;
   top: 20%;
-  float: left;
 }
 @media (max-width: 767px) {
   .page {
+    left: 0%;
+    right: 5%;
     height: auto;
     margin-bottom: 20px;
     padding-bottom: 20px;

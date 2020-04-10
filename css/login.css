@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter-ui.css');
+    1`@import url('https://rsms.me/inter/inter-ui.css');
 ::selection {
   background: #2D2F36;
 }
@@ -15,6 +15,7 @@
   position: absolute;
   right: 5%;
   top: 20%;
+  float: left;
 }
 @media (max-width: 767px) {
   .page {
@@ -26,7 +27,6 @@
   }
 }
 .container {
-  display: flex;
   height: 320px;
   margin: 0 auto;
   width: 640px;
@@ -44,6 +44,7 @@
   top: 20px;
   position: relative;
   width: 50%;
+  display: block;
 }
 @media (max-width: 767px) {
   .left {
@@ -51,6 +52,7 @@
     left: 20px;
     width: calc(100% - 40px);
     max-height: 270px;
+    display: block;
   }
 }
 .login {
@@ -70,13 +72,15 @@
   color: #F1F1F2;
   position: relative;
   width: 50%;
+  display: block;
 }
 @media (max-width: 767px) {
   .right {
     flex-shrink: 0;
     height: 100%;
     width: 100%;
-    max-height: 350px;
+    max-height: 280px;
+    display: block;
   }
 }
 svg {
@@ -125,3 +129,4 @@ input::-moz-focus-inner {
 #submit:active {
   color: #d0d0d2;
 }
+

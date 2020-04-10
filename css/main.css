@@ -1,0 +1,17 @@
+body{
+	background-color: #001d2f;
+	font-family: "Monteserrat", sans-serif;
+}
+
+.logs{
+  position: relative;
+  top: 5.5%;
+  float: right;
+  right: 150px;
+}
+
+@media (max-width: 640px) {
+	.logs{
+	  right: 60px;
+	}
+}

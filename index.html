@@ -21,14 +21,6 @@
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <title>Form</title>
-    <style type="text/css">
-      #form{
-        vertical-align: 50%;
-      }
-      #header{
-        float: left;
-      }
-    </style>
   </head>
   <body>
   	<div class="overlay-navigation">
@@ -47,6 +39,7 @@
       <div class="logs">
         <button type="button" class="btn btn-outline-light btn-sm" id="login" onclick="showLogin()">Login</button>
         <button type="button" class="btn btn-outline-dark btn-sm" id="signup" onclick="showSignUp()">Sign Up</button>
+        <button type="button" class="btn btn-dark btn-sm" id="logout">Logout</button>
       </div>
       <div class="open-overlay">
         <span class="bar-top"></span>
@@ -130,10 +123,18 @@
     a.style.display = "flex";
     var b = document.getElementById("registration-form");
     b.style.display = "none";
+    var c = document.getElementById("logout");
+    c.style.display = "none";
+    var d = document.getElementById("login");
+    d.style.display = "none";
     function showSignUp() {
       var x = document.getElementById("registration-form");
       var y = document.getElementById("container");
+      var e = document.getElementById("login");
+      var f = document.getElementById("signup");
       if (x.style.display === "none") {
+        f.style.display = "none";
+        e.style.display = "block";
         y.style.display = "none";
         x.style.display = "block";
       }
@@ -141,7 +142,11 @@
     function showLogin() {
       var x = document.getElementById("registration-form");
       var y = document.getElementById("container");
+      var e = document.getElementById("login");
+      var f = document.getElementById("signup");
       if (y.style.display === "none") {
+        e.style.display = "none";
+        f.style.display = "block";
         x.style.display = "none";
         y.style.display = "flex";
       }

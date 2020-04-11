@@ -1,6 +1,6 @@
 .registration-form {
   position: relative;
-  top: 10%;
+  top: %;
   right: 75%;
   width: 175%;
 }
@@ -163,7 +163,7 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   background: limegreen;
-  margin-top: -40px;
+  margin-top: -45px;
 }
 .success p {
   color: white;
@@ -173,4 +173,5 @@
   width: 100%;
   text-align: center;
   top: 20%;
+  padding-top: 10px;
 }

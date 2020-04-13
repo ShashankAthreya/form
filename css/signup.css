@@ -1,6 +1,6 @@
 .registration-form {
   position: relative;
-  top: %;
+  top: 10%;
   right: 75%;
   width: 175%;
 }
@@ -141,7 +141,7 @@
   color: #9999f8;
   font-weight: 100;
   width: 100%;
-  border: 0;
+  border: none;
 }
 
 .next {

@@ -89,18 +89,18 @@
             <h1>Sign Up</h1>
             <p>Fill in all the information below</p>
           </header>
-          <form>
+          <form action="includes/signup.inc.php" method="post">
             <div class="input-section email-section">
-              <input class="email" type="email" placeholder="Email ID" autocomplete="off"/>
+              <input class="email" name="emailId" type="email" placeholder="Email ID" autocomplete="off"/ required="">
               <div class="animated-button"><span class="icon-paper-plane"><i class="fa fa-envelope-o"></i></span><span class="next-button email"><i class="fa fa-arrow-up"></i></span></div>
             </div>
             <div class="input-section password-section folded">
-              <input class="password" type="password" placeholder="Password"/>
-              <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password"><i class="fa fa-arrow-up"></i></span></div>
+              <input class="password" name="pwd" type="password" placeholder="Password"/ required="">
+              <div class="animated-button"><span class="icon-lock"><i class="fa fa-lock"></i></span><span class="next-button password" onclick="showFinalSignUp()"><i class="fa fa-arrow-up"></i></span></div>
             </div>
             <div class="input-section repeat-password-section folded">
-              <input class="repeat-password" type="password" placeholder="Confirm Password"/>
-              <div class="animated-button"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></div>
+              <input class="repeat-password" name="pwd-repeat" type="password" placeholder="Confirm Password"/ required="">
+              <button class="animated-button" type="submit" name="signup-submit" id="button1"><span class="icon-repeat-lock"><i class="fa fa-lock"></i></span><span class="next-button repeat-password"><i class="fa fa-paper-plane"></i></span></button>
             </div>
             <div class="success"> 
               <p>ACCOUNT CREATED</p>
@@ -127,6 +127,12 @@
     c.style.display = "none";
     var d = document.getElementById("login");
     d.style.display = "none";
+    var e = document.getElementById("button1");
+    e.style.display = "none";
+    function showFinalSignUp() {
+      var e = document.getElementById("button1");
+      e.style.display = "block";
+    }
     function showSignUp() {
       var x = document.getElementById("registration-form");
       var y = document.getElementById("container");
